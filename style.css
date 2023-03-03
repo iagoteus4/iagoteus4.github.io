@@ -131,6 +131,14 @@ a{
     text-decoration: none;
 }
 
+#zap{
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-image: url('assets/zap.svg');
+    background-size: cover;
+}
+
 button {
     transition: all 300ms ease-in-out;
     padding: 10px 25px;
@@ -145,6 +153,7 @@ button.contact-linkedin {
 }
 
 button.contact-whatsapp {
+    position: relative;
     background-color: #0E091B;
     border: 1px solid rgb(99, 9, 9);
     margin: 22px 0 0 0;
@@ -162,6 +171,10 @@ button.contact-whatsapp:hover {
     cursor: pointer;
     transition: padding ease-in .3s;
     padding: 15px 30px;
+}
+
+button.contact-whatsapp:hover #zap{
+    display: inline-block;
 }
 
 button a {
@@ -491,8 +504,9 @@ footer h2 {
 
     #about p {
         margin: 0 5px 0 5px;
+        font-size: 17px;
         text-align: start;
-        font-size: 18px;
+        line-height: 1.4em;
     }
 
     h1.subtitle {
